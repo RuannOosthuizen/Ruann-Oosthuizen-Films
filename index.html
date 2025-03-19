@@ -12,7 +12,7 @@
 <body>
 
     <!-- Navition Bar -->
-     <nav class="expended-nav">
+    <nav class="expended-nav">
         <div class="nav-container">
             <!-- Name and Title -->
             <a href="#" class="nav-item">
@@ -48,19 +48,56 @@
                 </ul>
             </div>
         </div>
-     </nav>
+    </nav>
 
 
     <!-- Video Strip Section -->
-    <section class="video-section">
+    <section class="video-strip-container">
         <video autoplay muted loop>
             <source src="./assets/main-page/video-placeholder.mp4" type="video/mp4">
-            Your browser does not support the video tag.
         </video>
-        <div class="video-overlay">
-            <h1>Video Production & Photography</h1>
+        <div class="video-strip-overlay">
+            <h1>Video Production & Creative Filmming</h1>
             <p>Your subtext goes here, describing what you do.</p>
-            <a href="#" class="btn btn-outline-info">Connect</a>
+            <a href="#" class="strip-btn">Connect</a>
+        </div>
+    </section>
+
+
+    <!-- Grid video display section -->
+    <section class="video-grid">
+        <!-- video 1 -->
+        <div class="video-item">
+            <div class="video-title">Video Title 1</div>
+            <div class="video-description">This is a description for the first video.</div>
+            <div class="video-container">
+                <video class="hover-video" muted loop playsinline poster="./assets/grid-videos/vid-stills/coffee-ad.jpg">
+                    <source src="./assets/grid-videos/vids/video-placeholder.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        <!-- video 2 -->
+        <div class="video-item">
+            <div class="video-title">Video Title 1</div>
+            <div class="video-description">This is a description for the first video.</div>
+            <div class="video-container">
+                <video class="hover-video" muted loop playsinline poster="./assets/grid-videos/vid-stills/Liminal-Poster.png">
+                    <source src="./assets/grid-videos/vids/video-placeholder.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        <!-- video 3 -->
+        <div class="video-item">
+            <div class="video-title">Video Title 1</div>
+            <div class="video-description">This is a description for the first video.</div>
+            <div class="video-container">
+                <video class="hover-video" muted loop playsinline poster="./assets/grid-videos/vid-stills/aquarium-vid.png">
+                    <source src="./assets/grid-videos/vids/video-placeholder.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
         </div>
     </section>
 
@@ -74,6 +111,20 @@
         function closeNav() {
             document.getElementById("mySidepanel").style.width = "0";
         }
+
+
+
+        // Hover, play video script
+        document.querySelectorAll('.hover-video').forEach(video => {
+            video.addEventListener('mouseenter', () => {
+                video.play();
+            });
+
+            video.addEventListener('mouseleave', () => {
+                video.pause();
+                video.currentTime = 0; // Reset video to the beginning
+            });
+        });
     </script>
 </body>
 </html>
