@@ -1,0 +1,311 @@
+/* Variables */
+:root {
+    --cultured-white: rgb(245, 245, 247);
+    --silver: rgb(230, 230, 230);
+    --grey: rgb(66, 66, 69);
+    --gold: rgb(255, 204, 0);
+    --main-font: "Karla", sans-serif;
+    --header-weight: 600;
+    --header-size: 48px;
+    --sub-header-size: 36px;
+    --mobile-header-size: 24px;
+}
+
+
+/* Body Styling */
+* {
+    box-sizing: border-box;
+    background-color: var(--cultured-white);
+    font-family: var(--main-font);
+}
+a {
+    text-decoration: none;
+    color: var(--grey);
+}
+.header-text {
+    font-weight: var(--header-weight);
+}
+body {
+    margin: 0;
+    overscroll-behavior: none;
+    scroll-behavior: smooth;
+}
+
+
+/* Navigation Styling */
+.expended-nav { 
+    width: 100%;
+    padding: 30px 90px;
+}
+.nav-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-title-container:hover {
+    color: var(--gold);
+    transition: 0.3s;
+}
+.nav-title-upper {
+    font-size: 24px;
+    margin: 0;
+}
+.nav-title-lower {
+    margin: 0;
+    font-weight: 300;
+    font-size: 18px;
+}
+.menu-container ul {
+    display: flex;
+    list-style: none;
+}
+.menu-item {
+    padding: 0 10px;
+}
+.menu-item a {
+    transition: 0.3s;
+}
+.menu-item a:hover {
+    color: var(--gold);
+}
+/* Mobile nav bar */
+.sidepanel  {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 250px;
+    top: 0;
+    right: 0;
+    background-color: var(--cultured-white);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.1);
+}
+.sidepanel a {
+    padding: 15px 32px 10px 10px;
+    text-decoration: none;
+    text-align: right;
+    font-size: 20px;
+    color: var(--grey);
+    display: block;
+    transition: 0.3s;
+}
+.sidepanel a:hover {
+    color: var(--gold);
+}
+.sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 34px;
+}
+.openbtn {
+    display: none;
+    font-size: 34px;
+    cursor: pointer;
+    color: var(--grey);
+    padding: 10px 15px;
+    border: none;
+} 
+.openbtn:hover {
+    color: var(--gold);
+}
+@media (max-width: 640px) {
+    .openbtn {
+        display: initial;
+    }
+    .menu-container {
+        display: none;
+    }
+    .expended-nav { 
+        width: 100%;
+        padding: 30px 30px;
+    }
+}
+
+
+/* Footer section styling */
+.small-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--grey);
+    font-size: 12px;
+    padding: 60px 90px;
+    flex-wrap: wrap;
+}
+.small-footer a {
+    color: var(--grey);
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+.small-footer a:hover {
+    color: var(--gold);
+}
+.footer-center, .footer-right {
+    text-align: center;
+}
+@media screen and (max-width: 1024px) {
+    .small-footer {
+        font-size: 11px;
+        padding: 30px 60px;
+    }
+}
+@media (max-width: 640px) {
+    .small-footer {
+        flex-direction: column;
+        gap: 20px;
+        font-size: 10px;
+        padding: 30px 20px;
+    }
+}
+
+
+/* landing section styling */
+.title-strip {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 121px;
+}
+.title-text-container {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.title-text-container h1 {
+    font-size: var(--header-size);
+    font-weight: var(--header-weight);
+    margin: 0;
+}
+.title-text-container p {
+    font-size: 18;
+    margin-bottom: 20px;
+}
+@media (max-width: 640px) {
+    .title-text-container h1 {
+        font-size: var(--mobile-header-size);
+    }
+    .title-text-container p {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+}
+
+
+/* photo content section styling */
+.photos-content {
+    column-count: 3;
+    column-gap: 10px;
+    padding: 0 90px;
+}
+.grid-item {
+    break-inside: avoid;
+    margin-bottom: 10px;
+}
+.overlay-container {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    overflow: hidden;
+    transition: all 1s ease;
+}
+.overlay-container:hover {
+    border-radius: 25px;
+}
+.overlay-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+.overlay-container:hover img {
+    transform: scale(1.03);
+    transition: transform 0.8s ease;
+}
+.overlay-text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--cultured-white);
+    background: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* space between lines */
+}
+.overlay-container:hover .overlay-text-container {
+    opacity: 1;
+}
+.overlay-container:hover .overlay,
+.overlay-container:hover .overlay-text {
+    opacity: 1;
+}
+@media screen and (max-width: 1024px) {
+    .photos-content {
+        column-count: 2;
+        padding: 0 30px;
+    }
+}
+@media (max-width: 640px) {
+    .photos-content {
+        column-count: 1;
+        padding: 0 15px;
+        column-gap: 5px;
+    }
+}
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+.modal-content {
+    display: block;
+    margin: auto;
+    max-width: 80%;
+    max-height: 80vh;
+    animation: zoomIn 0.3s ease;
+    border-radius: 10px;
+} 
+@keyframes zoomIn {
+    from {transform: scale(0.8);}
+    to {transform: scale(1);}
+} 
+.close {
+    position: absolute;
+    top: 30px;
+    right: 45px;
+    color: var(--cultured-white);
+    background: none;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.close:hover {
+    color: var(--gold);
+    scale: 1.2;
+}

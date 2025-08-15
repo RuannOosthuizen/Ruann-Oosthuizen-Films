@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stlye-sheets/about-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <title>Bio & Contact</title>
+</head>
+
+<body>
+
+    <!-- Navition Bar -->
+    <nav class="expended-nav">
+        <div class="nav-container">
+            <!-- Name and Title -->
+            <a href="./index.html" class="nav-item">
+                <div class="nav-title-container">
+                    <p class="nav-title-upper">Ruann Oosthuizen</p>
+                    <p class="nav-title-lower">Filmmaker</p>
+                </div>
+            </a>
+            <!-- Toggle button for mobile view -->
+            <div id="mySidepanel" class="sidepanel">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a href="./videography.html">Videography</a>
+                <a href="./photography.html">Photography</a>
+                <a href="./graphic.html">Graphic Design</a>
+                <!-- <a href="#">Bio & Contact</a> -->
+            </div>
+            <button class="openbtn" onclick="openNav()">☰</button>
+            <!-- Navbar menu -->
+            <div class="menu-container">
+                <ul>
+                    <li class="menu-item">
+                        <a href="./videography.html">Videography</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="./photography.html">Photography</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="./graphic.html">Graphic Design</a>
+                    </li>
+                    <!-- <li class="menu-item">
+                        <a href="#">Bio & Contact</a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- landing section -->
+    <div class="title-strip">
+        <div class="title-text-container">
+            <h1>Filmmaker & Content Creator</h1>
+            <p>My story and passion</p>
+        </div>
+    </div>
+
+
+    <!-- content section -->
+     <div class="bio-container">
+        <div class="about-me-section">
+            <div class="title-container">
+                <p>About</p>
+            </div>
+            <div class="par-container">
+                <p>I’ve always been a creative at heart growing up in a home filled with art, film and imagination, storytelling became second nature to me. My journey began with a Bachelor of Motion Picture and Art from AFDA Durban, where I developed a strong foundation in filmmaking and post-production.
+                    After graduating, I dove into the freelance world, filming and editing everything from weddings and short films to YouTube content and commercial work. It was during this time that I discovered the part of the process I loved most: finding the story. Whether it’s a 60-second reel or a full-length video, I believe every project holds a narrative and my passion is in bringing that story to life through thoughtful editing and visual rhythm.
+                    Relocating to Cape Town gave me the chance to refine my style, experiment with new techniques and reconnect with what truly inspires me. Today, every project is a chance to grow, connect and share something meaningful and that’s what keeps me excited to create.
+            </div>
+        </div>
+        <div class="bio-filmmaker">
+            <div class="title-container">
+                <p>My Passion</p>
+            </div>
+            <div class="par-container">
+                <p>Video editing is where the magic truly happens and is where my passion lies. It’s the part of the process where scattered moments transform into meaning, where rhythm, emotion and story collide. I don’t just cut clips together I focuse on crafting feelings. Each frame, transition, sound and pause is intentional. It’s where I get to breathe life into raw footage and shape it into something that moves people.
+                    Whether it's a personal story, a brand message or a memory captured on film, I see editing as a way to honour the heart of the moment and elevate it into something unforgettable. This is where I feel most connected to my creativity where I find purpose, presence and pure joy in the craft.</p>
+            </div>
+        </div>
+        <div class="clients-list">
+
+        </div>
+        <div class="bio-dev">
+
+        </div>
+     </div>
+
+
+    <!-- contact section -->
+    <footer class="small-footer">
+        <div class="footer-left">
+            &copy; 2025 Ruann Oosthuizen. All rights reserved.
+        </div>
+        <div class="footer-center">
+            <a href="mailto:adriaanroost@gmail.com">adriaanroost@gmail.com</a><br>
+        </div>
+        <div class="footer-right">
+            <a href="https://www.youtube.com/@studiotreelight" target="_blank">Filming YouTube</a>
+            <a href="https://www.youtube.com/@fuzzykoala" target="_blank">Gaming Channel</a>
+            <a href="https://www.tiktok.com/@fuzzykoala" target="_blank">TikTok</a>
+            <a href="https://www.instagram.com/studio_treelight/" target="_blank">Instagram</a>
+            <a href="https://www.linkedin.com/in/ruann-oosthuizen-95a55b198/" target="_blank">LinkedIn</a>
+        </div>
+    </footer>
+
+
+
+    <script>
+        // Mobile side nav bar toggle script
+        function openNav() {
+            document.getElementById("mySidepanel").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidepanel").style.width = "0";
+        }
+    </script>
+</body>
+</html>

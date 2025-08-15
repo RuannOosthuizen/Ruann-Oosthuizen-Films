@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stlye-sheets/graphic-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <title>Graphic Design</title>
+</head>
+
+<body>
+
+    <!-- Navition Bar -->
+    <nav class="expended-nav">
+        <div class="nav-container">
+            <!-- Name and Title -->
+            <a href="./index.html" class="nav-item">
+                <div class="nav-title-container">
+                    <p class="nav-title-upper">Ruann Oosthuizen</p>
+                    <p class="nav-title-lower">Filmmaker</p>
+                </div>
+            </a>
+            <!-- Toggle button for mobile view -->
+            <div id="mySidepanel" class="sidepanel">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a href="./videography.html">Videography</a>
+                <a href="./photography.html">Photography</a>
+                <!-- <a href="#">Graphic Design</a> -->
+                <a href="./about.html">Bio & Contact</a>
+            </div>
+            <button class="openbtn" onclick="openNav()">☰</button>
+            <!-- Navbar menu -->
+            <div class="menu-container">
+                <ul>
+                    <li class="menu-item">
+                        <a href="./videography.html">Videography</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="./photography.html">Photography</a>
+                    </li>
+                    <!-- <li class="menu-item">
+                        <a href="#">Graphic Design</a>
+                    </li> -->
+                    <li class="menu-item">
+                        <a href="./about.html">Bio & Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- landing section -->
+    <div class="title-strip">
+        <div class="title-text-container">
+            <h1>Graphic Designing</h1>
+            <p>My Graphical & Animation Work</p>
+        </div>
+    </div>
+
+
+    <!-- photos content section -->
+    <div class="photos-content">
+
+        <div class="grid-item">
+            <div class="overlay-container">
+                <img src="./assets/grid-graphics/Winter-WC.png" alt="1">
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="overlay-container">
+                <img src="./assets/grid-graphics/notorious-poster.png" alt="2">
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="overlay-container">
+                <img src="./assets/grid-graphics/liminal-poster.png" alt="3">
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="overlay-container">
+                <img src="./assets/grid-graphics/Sci-Fi-Desert-walk.png" alt="4">
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="overlay-container">
+                <img src="./assets/grid-graphics/all-in-poster.png" alt="5">
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="overlay-container">
+                <img src="./assets/grid-graphics/das-horizontal-for-dark-bg.png" alt="6">
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="overlay-container">
+                <img src="./assets/grid-graphics/das-horizontal-for-light-bg.png" alt="7">
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="overlay-container">
+                <img src="./assets/grid-graphics/das-logo-for-dark-bg.png" alt="8">
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="overlay-container">
+                <img src="./assets/grid-graphics/das-logo-for-light-bg.png" alt="9">
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="overlay-container">
+                <img src="./assets/grid-graphics/das-text-only-logo-for-dark-bg.png" alt="10">
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="overlay-container">
+                <img src="./assets/grid-graphics/das-text-only-logo-for-light-bg.png" alt="11">
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="overlay-container">
+                <img src="./assets/grid-graphics/das-vertical-for-dark-bg.png" alt="12">
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="overlay-container">
+                <img src="./assets/grid-graphics/double-exposure.png" alt="13">
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="overlay-container">
+                <img src="./assets/grid-graphics/flower-WC.png" alt="14">
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="overlay-container">
+                <img src="./assets/grid-graphics/group-banenrs.png" alt="15">
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="overlay-container">
+                <img src="./assets/grid-graphics/Iilusion-WC.png" alt="16">
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="overlay-container">
+                <img src="./assets/grid-graphics/person-on-dexk.png" alt="17">
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="overlay-container">
+                <img src="./assets/grid-graphics/the-glass-poster.png" alt="18">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal HTML -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+
+    <!-- contact section -->
+    <footer class="small-footer">
+        <div class="footer-left">
+            &copy; 2025 Ruann Oosthuizen. All rights reserved.
+        </div>
+        <div class="footer-center">
+            <a href="mailto:adriaanroost@gmail.com">adriaanroost@gmail.com</a><br>
+        </div>
+        <div class="footer-right">
+            <a href="https://www.youtube.com/@studiotreelight" target="_blank">Filming YouTube</a>
+            <a href="https://www.youtube.com/@fuzzykoala" target="_blank">Gaming Channel</a>
+            <a href="https://www.tiktok.com/@fuzzykoala" target="_blank">TikTok</a>
+            <a href="https://www.instagram.com/studio_treelight/" target="_blank">Instagram</a>
+            <a href="https://www.linkedin.com/in/ruann-oosthuizen-95a55b198/" target="_blank">LinkedIn</a>
+        </div>
+    </footer>
+
+
+
+    <script>
+        // Mobile side nav bar toggle script
+        function openNav() {
+            document.getElementById("mySidepanel").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidepanel").style.width = "0";
+        }
+
+
+
+        // Hover, play video script
+        document.querySelectorAll('.hover-video').forEach(video => {
+            video.addEventListener('mouseenter', () => {
+                video.play();
+            });
+
+            video.addEventListener('mouseleave', () => {
+                video.pause();
+                video.currentTime = 0; // Reset video to the beginning
+            });
+        });
+
+
+        // Click image display script:
+        // Get modal elements
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("modalImg");
+        const closeBtn = document.querySelector(".modal .close");
+
+        // Add click listener to all grid images
+        document.querySelectorAll(".overlay-container img").forEach(img => {
+            img.addEventListener("click", function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            });
+        });
+
+        // Close modal on click of X
+        closeBtn.onclick = function () {
+            modal.style.display = "none";
+        };
+
+        // Optional: Close modal on outside click
+        modal.onclick = function (e) {
+            if (e.target === modal) {
+            modal.style.display = "none";
+            }
+        };
+
+
+    </script>
+</body>
+</html>
